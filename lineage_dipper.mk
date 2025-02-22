@@ -16,6 +16,15 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
 PRODUCT_MANUFACTURER := Xiaomi
 
+# RisingOS specific configure
+RISING_MAINTAINER="Kagura iYoRoy"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 845" \
+    RisingMaintainer="Kagura iYoRoy"
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys" \
     BuildFingerprint=Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys
